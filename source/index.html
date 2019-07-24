@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-            alt="Логотип приложения Pink">
-        </a>
-        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+              alt="Логотип приложения Pink">
+          </a>
+          <button class="main-nav__close" type="button">Закрыть меню</button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -28,29 +31,31 @@
           </li>
         </ul>
       </nav>
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-          alt="Логотип приложения Pink">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+            alt="Логотип приложения Pink">
+        </a>
+        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      </div>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Приложение для работы с фотографиями "Pink"</h1>
-      <img class="main-image"  src="http://placehold.it/320x462" width="320" height="462" alt="Иллюстрация работы приложения">
+      <img class="main-image" src="http://placehold.it/320x462" width="320" height="462" alt="Иллюстрация работы приложения">
 
       <section class="download">
         <h2 class="visually-hidden">Ссылки для скачивания приложения</h2>
-        <a class="download__button download-button" href="#">Ссылка на iTunes</a>
+        <a class="download__button download-button" href="itunes.com">Скачать приложение</a>
         <ul class="download__list download-list">
-          <li class="download-list__item">Ссылка на iTunes
-              <a class="download__link download__link--itunes">Ссылка на Google play</a>
+          <li class="download-list__item">
+              <a class="download__link download__link--itunes" href="#">Ссылка на iTunes</a>
           </li>
           <li class="download-list__item">
-            <a class="download__link download__link--google-play">Ссылка на Google play</a>
+            <a class="download__link download__link--google-play" href="#">Ссылка на Google play</a>
           </li>
           <li class="download-list__item">
-              <a class="download__link download__link--microsoft-store">Ссылка на Microsoft store</a>
+              <a class="download__link download__link--microsoft-store" href="#">Ссылка на Microsoft store</a>
           </li>
         </ul>
         <p class="download__description download-description">

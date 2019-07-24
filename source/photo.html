@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-            alt="Логотип приложения Pink">
-        </a>
-        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+              alt="Логотип приложения Pink">
+          </a>
+          <button class="main-nav__close" type="button">Закрыть меню</button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -28,49 +31,48 @@
           </li>
         </ul>
       </nav>
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-          alt="Логотип приложения Pink">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+            alt="Логотип приложения Pink">
+        </a>
+        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      </div>
     </header>
 
     <main class="main-container">
 
       <section class="photo-intro">
-      <h1 class="photo-intro__header">Фотографии пользователей</h1>
-      <p class="photo-intro__description">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </p>
+        <h1 class="photo-intro__header">Фотографии пользователей</h1>
+        <p class="photo-intro__description">
+          Взгляните на фотографии, которые выкладывают пользователи!<br>
+          Видите, как не хватает ваших?
+        </p>
       </section>
 
       <section class="photo-gallery">
         <h2 class="visually-hidden">Галлерея фотографий</h2>
-        <!-- По поводу "Панорама дня" не ясно (в ТЗ пояснений нет):
-        1. является ли им только первый снимок в списке, и всегда ли есть "Панорама дня" или в какой-то день его может и не быть;
-        2. может ли иметь такой флажок/формат абсолютно любой снимок.
-        Текущая реализация: "Панорама дня" может быть только первый снимок в списке и присутствует всегда. -->
+        <div class="photo-gallery__daily-panorama">
+          <div class="photo-gallery__panorama-flag">Панорама дня</div>
+          <figure class="photo-gallery__panorama-content">
+            <a class="photo-gallery__link-panorama" href="#">
+              <img class="photo-gallery__panorama-photo" src="http://placehold.it/320x137" width="320"
+                height="137" alt="Фотография, сделанная пользователем приложения">
+            </a>
+            <figcaption class="photo-gallery__panorama-details">
+              <p class="photo-gallery__author">Анна
+                <time class="photo-gallery__timeago" datetime="2019-07-15T14:18">(5 минут назад)</time>
+              </p>
+              <p class="photo-gallery__author-description">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+                вопросы!
+              </p>
+              <button class="photo-gallery__like-button" type="button">Нравится</button>
+              <span class="photo-gallery__likes-amount">Нравится: 215</span>
+            </figcaption>
+          </figure>
+        </div>
         <ul class="photo-gallery__list">
-          <li class="photo-gallery__item">
-            <div class="photo-gallery__best-flag">Панорама дня</div>
-            <figure class="photo-gallery__content photo-gallery__content--best">
-              <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo photo-gallery__photo--best" src="http://placehold.it/320x137" width="320" height="137"
-                  alt="Фотография, сделанная пользователем приложения">
-              </a>
-              <figcaption class="photo-gallery__details photo-gallery__details--best">
-                <p class="photo-gallery__author">Анна
-                  <time class="photo-gallery__timeago" datetime="2019-07-15T14:18">(5 минут назад)</time>
-                </p>
-                <p class="photo-gallery__author-description">
-                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-                </p>
-                <button class="photo-gallery__like-button" type="button">Нравится</button>
-                <span class="photo-gallery__likes-amount">Нравится: 215</span>
-              </figcaption>
-            </figure>
-          </li>
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
