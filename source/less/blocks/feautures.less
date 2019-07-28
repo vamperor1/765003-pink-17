@@ -1,11 +1,12 @@
 .feautures__header {
-  .padding-side;
   margin-bottom: 29px;
+  .padding-side;
   padding-top: 40px;
 }
 
 .feautures__teaser {
   margin: 0;
+
   font-family: @font-light;
   font-size: 24px;
   line-height: 30px;
@@ -17,10 +18,11 @@
 }
 
 .feautures__list {
-  .list-style-reset;
   .padding-side;
   padding-top: 82px;
   padding-bottom: 32px;
+
+  list-style: none;
   background-color: @bg-grey;
   clip-path: polygon(0 32px, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -36,6 +38,7 @@
 .feautures__name {
   margin-top: 0;
   margin-bottom: 12px;
+
   font-size: 18px;
   font-family: @font-bold;
   color: black;
@@ -44,4 +47,10 @@
 .feautures__description {
   margin-top: 0;
   margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .feautures {
+    margin-top: 190px;
+  }
 }

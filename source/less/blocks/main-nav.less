@@ -1,4 +1,7 @@
 .main-nav {
+  position: relative;
+  z-index: 20;
+  margin-bottom: -66px;
   background-color: @bg-lightblue;
 }
 
@@ -20,4 +23,26 @@
 
 .main-nav__wrapper {
   .flex-space-between();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin-bottom: -110px;
+  }
+
+  .main-nav__logo {
+    width: 147px;
+    height: 40px;
+    margin-top: 27px;
+    margin-bottom: 42px;
+  }
+
+  .main-nav__close {
+    margin-top: 45px;
+  }
+
+  .main-nav__logo-image {
+    width: 147px;
+    height: 40px;
+  }
 }

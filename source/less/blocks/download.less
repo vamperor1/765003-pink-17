@@ -2,5 +2,20 @@
   .padding-side;
   padding-top: 28px;
   padding-bottom: 30px;
+
   background-color: @bg-darkblue;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    position: relative;
+    z-index: 10;
+
+    width: 300px;
+    margin-top: -360px;
+    margin-left: 20px;
+    padding: 0;
+
+    background-color: transparent;
+  }
 }
