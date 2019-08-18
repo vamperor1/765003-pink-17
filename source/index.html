@@ -8,101 +8,156 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-              alt="Логотип приложения Pink">
-          </a>
-          <button class="main-nav__close" type="button">Закрыть меню</button>
+      <!-- <a class="main-header__logo">
+        <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+          alt="Логотип приложения Pink">
+      </a> -->
+      <!-- <div class="main-header__wrapper">
+      <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      </div> -->
+      <nav class="main-nav main-nav--active">
+        <div class="main-nav__flex-wrapper">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-image" src="http://placehold.it/75x22" width="75" height="22"
+                alt="Логотип приложения Pink">
+            </a>
+            <button class="main-nav__nav-toggle" type="button">Открыть меню</button>
+            <button class="main-nav__close" type="button">Закрыть меню</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
-      <div class="main-header__wrapper">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22"
-            alt="Логотип приложения Pink">
-        </a>
-        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
-      </div>
     </header>
 
     <main class="main-container">
-      <h1 class="visually-hidden">Приложение для работы с фотографиями "Pink"</h1>
-      <img class="main-image" src="http://placehold.it/320x462" width="320" height="462" alt="Иллюстрация работы приложения">
+      <section class="main-screen">
+        <div class="main-screen__wrapper">
+          <h1 class="visually-hidden">Приложение для работы с фотографиями "Pink"</h1>
+          <div class="main-screen__header-wrapper">
+            <p class="main-screen__header">Взгляните на жизнь иначе!</p>
 
-      <section class="download">
-        <h2 class="visually-hidden">Ссылки для скачивания приложения</h2>
-        <a class="download__button download-button" href="itunes.com">Скачать приложение</a>
-        <ul class="download__list download-list">
-          <li class="download-list__item">
-              <a class="download__link download__link--itunes" href="#">Ссылка на iTunes</a>
-          </li>
-          <li class="download-list__item">
-            <a class="download__link download__link--google-play" href="#">Ссылка на Google play</a>
-          </li>
-          <li class="download-list__item">
-              <a class="download__link download__link--microsoft-store" href="#">Ссылка на Microsoft store</a>
-          </li>
-        </ul>
-        <p class="download__description download-description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+            <img class="main-screen__image" src="http://placehold.it/258x286" width="258" height="286"
+              alt="Иллюстрация работы приложения">
+          </div>
+          <div class="download">
+            <div class="download__wrapper">
+              <a class="download__button download-button" href="itunes.com">Скачать приложение</a>
+              <ul class="download__list download-list">
+                <li class="download-list__item">
+                  <a class="download__link download__link--itunes" href="#">Ссылка на iTunes</a>
+                </li>
+                <li class="download-list__item">
+                  <a class="download__link download__link--google-play" href="#">Ссылка на Google play</a>
+                </li>
+                <li class="download-list__item">
+                  <a class="download__link download__link--microsoft-store" href="#">Ссылка на Microsoft store</a>
+                </li>
+              </ul>
+              <p class="download__description download-description">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="feautures">
-        <header class="feautures__header">
-          <h2 class="visually-hidden">Описание приложения</h2>
-          <p class="feautures__teaser">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="feautures__teaser">
-            Нам есть, что вам предложить!
-          </p>
-        </header>
-        <ul class="feautures__list">
-          <li class="feautures__item">
-            <h3 class="feautures__name">
-              Поднимает настроение
-            </h3>
-            <p class="feautures__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        <h2 class="visually-hidden">Описание приложения</h2>
+
+          <header class="feautures__header">
+            <p class="feautures__teaser">
+              Устали от серости мегаполиса?
             </p>
-          </li>
-          <li class="feautures__item">
-            <h3 class="feautures__name">
-              Меняет мир вокруг
-            </h3>
-            <p class="feautures__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            <p class="feautures__teaser">
+              Нам есть, что вам предложить!
             </p>
-          </li>
-          <li class="feautures__item">
-            <h3 class="feautures__name">
-              Заводит новых друзей
-            </h3>
-            <p class="feautures__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </header>
+          <div class="feautures__bg-wrapper">
+            <ul class="feautures__list">
+              <li class="feautures__item">
+                <h3 class="feautures__name">
+                  Поднимает настроение
+                </h3>
+                <p class="feautures__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="feautures__item">
+                <h3 class="feautures__name">
+                  Меняет мир вокруг
+                </h3>
+                <p class="feautures__description">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="feautures__item">
+                <h3 class="feautures__name">
+                  Заводит новых друзей
+                </h3>
+                <p class="feautures__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+          </div>
+        <!-- <img class="feautures__image" src="http://placehold.it/320x277" width="320" height="277"
+          alt="Иллюстрация работы приложения"> -->
+      </section>
+
+      <section class="british-scientists">
+        <div class="british-scientists__flex-wrapper">
+          <h2 class="visually-hidden">Британские ученые о приложении</h2>
+          <div class="british-scientists__icon">24</div>
+          <div class="british-scientists__wrapper">
+            <p class="british-scientists__header">Эффект<br> на 24 часа!</p>
+            <p class="british-scientists__description">
+              Британские ученые провели исследования и доказали, что положительный эффект
+              от использования приложения длится целые сутки!
             </p>
-          </li>
-        </ul>
-        <img class="feautures__image"  src="http://placehold.it/320x277" width="320" height="277" alt="Иллюстрация работы приложения">
+            <a class="british-scientists__link" href="">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
 
     </main>
+
+    <footer class="main-footer main-footer--index">
+      <a class="main-footer__logo" href="index.html">
+        <img class="main-footer__logo-image" src="http://placehold.it/147x40" width="147" height="40"
+          alt="Логотип приложения Pink">
+      </a>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+            Фейсбуке</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
 
   </body>
 </html>

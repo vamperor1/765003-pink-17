@@ -4,12 +4,34 @@
 
 .site-list__item a {
   display: block;
-  width: 280px;
+
+  // width: 280px;
+  .container-mobile ;
   padding: 16px 20px;
+
   font-family: @font-bold;
   font-size: 18px;
   line-height: 32px;
   color: white;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item a {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item a {
+    width: auto;
+    margin-left: 79px;
+    padding: 0;
+
+    font-family: @font-regular;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
 }

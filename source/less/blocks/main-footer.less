@@ -1,7 +1,11 @@
 .main-footer {
-  .padding-side;
+  .container-mobile;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.main-footer--index {
+  display: none;
 }
 
 .main-footer__logo {
@@ -9,4 +13,25 @@
   width: 147px;
   height: 40px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer--index {
+    .flex-space-between;
+  }
+
+  .main-footer {
+    .container-tablet;
+    .flex-space-between;
+  }
+
+  .main-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    .container-desktop;
+  }
 }
