@@ -1,6 +1,6 @@
 body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
 
   font-family: "Open Sans", "Verdana", sans-serif;
@@ -10,14 +10,6 @@ body {
   color: @bg-lightblue;
 
   background-color: #ffffff;
-}
-
-@media (min-width: @tablet-width) {
-  body {
-    width: 660px;
-    margin: 0 auto;
-    padding: 0;
-  }
 }
 
 a {
@@ -46,9 +38,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-// .container {
-//   width: 320px;
-//   margin: 0 auto;
-//   padding: 0 10px;
-// }

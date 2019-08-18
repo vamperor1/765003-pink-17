@@ -1,0 +1,131 @@
+.british-scientists {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .british-scientists {
+    display: block;
+  }
+
+  .british-scientists__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .container-tablet;
+  }
+
+  .british-scientists__header,
+  .british-scientists__description,
+  .british-scientists__link {
+    margin: 0;
+  }
+
+  .british-scientists__icon {
+    position: relative;
+
+    margin-top: 143px;
+    margin-left: 64px;
+
+    font-family: @font-bold;
+    font-size: 96px;
+    line-height: normal;
+    color: #d22856;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -85px;
+      left: -65px;
+
+      width: 238px;
+      height: 276px;
+
+      background-image: url("../../img/icon-timer-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .british-scientists__wrapper {
+    // box-sizing: border-box;
+    width: 310px;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    // padding-left: 310px;
+  }
+
+  .british-scientists__header {
+    margin-bottom: 10px;
+
+    font-family: @font-bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+  }
+
+  .british-scientists__description {
+    margin-bottom: 10px;
+  }
+
+  .british-scientists__link {
+    display: block;
+
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .british-scientists {
+    background-color: #f2f2f2;
+  }
+
+  .british-scientists__flex-wrapper {
+    .container-desktop;
+  }
+
+  .british-scientists__wrapper {
+    width: 575px;
+    margin-top: 126px;
+    margin-bottom: 114px;
+  }
+
+  .british-scientists__icon {
+    margin-top: 140px;
+    margin-left: 80px;
+
+    font-size: 120px;
+
+    &::before {
+      top: -107px;
+      left: -80px;
+
+      width: 298px;
+      height: 345px;
+
+      background-image: url("../../img/icon-timer-desktop.svg");
+    }
+  }
+
+  .british-scientists__header {
+    margin-bottom: 24px;
+
+    line-height: 30px;
+  }
+
+  .british-scientists__header br {
+    display: none;
+  }
+
+  .british-scientists__description {
+    margin-bottom: 30px;
+    padding-right: 55px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .british-scientists__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
