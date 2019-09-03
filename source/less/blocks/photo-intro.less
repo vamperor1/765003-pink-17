@@ -4,6 +4,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-position: center -4px;
+    // background-size: 292px auto;
+  }
 }
 
 .photo-intro__header {
@@ -41,6 +47,12 @@
   .photo-intro__bg-wrapper {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+      background-position: center top;
+    }
   }
 
   .photo-intro__description br {
@@ -62,6 +74,12 @@
 @media (min-width: @desktop-width) {
   .photo-intro__bg-wrapper {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+      background-position: center 12px;
+    }
   }
 
   .photo-intro__header {
@@ -72,7 +90,7 @@
 
   .photo-intro__description {
     padding: 0;
-    padding-top: 92px;
+    padding-top: 93px;
     padding-bottom: 88px;
   }
 
