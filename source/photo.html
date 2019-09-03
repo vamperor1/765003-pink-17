@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -79,8 +80,11 @@
           <figure class="photo-gallery__panorama-content">
 
             <a class="photo-gallery__link-panorama" href="#">
-              <img class="photo-gallery__panorama-photo" src="img/panorama-mobile@1x.jpg" width="320"
-                height="137" alt="Фотография, сделанная пользователем приложения">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+                <img class="photo-gallery__panorama-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x-test.jpg 2x" alt="Фотография, сделанная пользователем приложения">
+              </picture>
               <div class="photo-gallery__panorama-flag">Панорама дня</div>
             </a>
 
@@ -104,8 +108,11 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280"
-                  height="180" alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Левон
@@ -124,8 +131,11 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280" height="180"
-                  alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Антон
@@ -144,8 +154,12 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280" height="180"
-                  alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                    alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Борис
@@ -164,8 +178,12 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280" height="180"
-                  alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                    alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Сергей
@@ -184,8 +202,12 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280" height="180"
-                  alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                    alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Максим
@@ -204,8 +226,12 @@
           <li class="photo-gallery__item">
             <figure class="photo-gallery__content">
               <a class="photo-gallery__link-photo" href="#">
-                <img class="photo-gallery__photo" src="http://placehold.it/280x180" width="280" height="180"
-                  alt="Фотография, сделанная пользователем приложения">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="photo-gallery__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                    alt="Фотография, сделанная пользователем приложения">
+                </picture>
               </a>
               <figcaption class="photo-gallery__details">
                 <p class="photo-gallery__author">Надежда
