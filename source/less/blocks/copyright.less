@@ -1,3 +1,41 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
+  margin: 0;
+  margin-right: 15px;
+
+
   line-height: 18px;
+}
+
+.copyright__link {
+  &:hover .copyright__logo-image,
+  &:focus .copyright__logo-image {
+    fill: #283645;
+  }
+
+  &:active .copyright__logo-image {
+    fill: fade(#283645, 30%);
+  }
+}
+
+.copyright__logo-image {
+  width: 27px;
+  height: 34px;
+  vertical-align: top;
+
+  fill: #d22856;
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin-right: 14px;
+    padding-bottom: 3px;
+
+    font-size: 18px;
+  }
 }

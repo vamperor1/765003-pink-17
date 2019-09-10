@@ -1,7 +1,8 @@
 .main-footer {
   .container-mobile;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 0 20px;
+  padding-top: 39px;
+  padding-bottom: 41px;
 }
 
 .main-footer--index {
@@ -13,25 +14,83 @@
   width: 147px;
   height: 40px;
   margin: 0 auto;
+  margin-bottom: 40px;
+
+  &[href]:hover .main-footer__logo-image,
+  &[href]:focus .main-footer__logo-image {
+    fill: #d22856;
+  }
+
+  &[href]:active .main-footer__logo-image {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo-image {
+  width: 147px;
+  height: 40px;
+
+  fill: #283645;
+}
+
+.main-footer__logo-glasses-desktop,
+.main-footer__logo-stars {
+  display: none;
+}
+
+.main-footer__social {
+  width: 177px;
+  margin: 0 auto;
+  margin-bottom: 38px;
 }
 
 @media (min-width: @tablet-width) {
+  .main-footer,
   .main-footer--index {
     .flex-space-between;
-  }
-
-  .main-footer {
-    .container-tablet;
-    .flex-space-between;
+    width: 620px;
+    padding: 36px 20px;
+    padding-bottom: 38px;
   }
 
   .main-footer__logo {
     margin: 0;
   }
+
+  .main-footer__social {
+    margin: 0;
+    margin-top: 2px;
+  }
+
+  .main-footer__copyright {
+    margin-top: 6px;
+    margin-left: 16px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer {
-    .container-desktop;
+  .main-footer,
+  .main-footer--index {
+    width: 940px;
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .main-footer__logo-glasses-desktop,
+  .main-footer__logo-stars {
+    display: inline-block;
+  }
+
+  .main-footer__logo-glasses {
+    display: none;
+  }
+
+  .main-footer__social {
+    margin-top: 4px;
+  }
+
+  .main-footer__copyright {
+    margin-left: -12px;
   }
 }

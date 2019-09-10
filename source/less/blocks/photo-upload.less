@@ -1,0 +1,389 @@
+.photo-upload__header {
+  .container-mobile;
+  margin-bottom: 42px;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.photo-upload__form {
+  .container-mobile;
+  padding-top: 20px;
+
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.photo-upload__picture-wrapper {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+.photo-upload__picture {
+  vertical-align: top;
+}
+
+.photo-upload__settings-list {
+  position: relative;
+
+  .list-style-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 208px;
+  margin: 0 auto;
+  margin-bottom: 112px;
+}
+
+.photo-upload__setting-button {
+  .button-style-reset;
+  width: 48px;
+  height: 48px;
+
+  &:hover .photo-upload__setting-icon,
+  &:focus .photo-upload__setting-icon {
+    fill: fade(#283645, 50%);
+  }
+}
+
+.photo-upload__setting-icon {
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+
+  fill: fade(#283645, 30%);
+}
+
+.photo-upload__setting-item--active .photo-upload__setting-icon {
+  fill: #d22856;
+}
+
+.photo-upload__setting-icon--contrast {
+  width: 32px;
+  height: 32px;
+}
+
+.photo-upload__setting-panel {
+  position: absolute;
+  top: 85px;
+  left: -17px;
+
+  display: none;
+}
+
+.photo-upload__setting-item--active .photo-upload__setting-panel {
+  display: block;
+}
+
+.photo-upload__setting-bar {
+  position: relative;
+
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+
+  background-color: #283645;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -39px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: #dddfe0;
+  }
+}
+
+.photo-upload__setting-toggle {
+  position: absolute;
+  top: -6px;
+  right: 34px;
+
+  width: 10px;
+  height: 10px;
+
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+.photo-upload__buttons {
+  width: 280px;
+}
+
+.photo-upload__button {
+  .button-style-reset;
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  font-family: @font-bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  border-radius: 35px;
+}
+
+.photo-upload__button--post {
+  margin-bottom: 12px;
+
+  color: #d22856;
+
+  border: 3px solid #d22856;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: fade(white, 30%);
+  }
+}
+
+.photo-upload__button-cancel {
+  margin-bottom: 40px;
+
+  color: fade(#283645, 10%);
+
+  border: 3px solid fade(#283645, 10%);
+
+  &:hover,
+  &:focus {
+    color: fade(#283645, 30%);
+
+    border-color: fade(#283645, 30%);
+  }
+
+  &:active {
+    color: fade(white, 30%);
+
+    border-color: transparent;
+    background: fade(#283645, 30%);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .photo-upload__header {
+    width: 620px;
+    margin-bottom: 69px;
+
+    font-size: 18px;
+  }
+
+  .photo-upload__form {
+    display: flex;
+    width: 620px;
+    padding-top: 57px;
+  }
+
+  .photo-upload__picture-wrapper {
+    width: 300px;
+  }
+
+  .photo-upload__settings-list {
+    display: block;
+    width: auto;
+    margin-top: 9px;
+    margin-bottom: 91px;
+    margin-left: 48px;
+  }
+
+  .photo-upload__setting-item {
+    display: flex;
+    margin-bottom: 50px;
+
+    &:nth-child(1) .photo-upload__setting-toggle {
+      right: 42px;
+    }
+
+    &:nth-child(2) .photo-upload__setting-toggle {
+      right: 163px;
+    }
+
+    &:nth-child(3) .photo-upload__setting-toggle {
+      right: 92px;
+    }
+  }
+
+  .photo-upload__setting-button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-upload__setting-icon {
+    width: 22px;
+    height: 22px;
+    fill: #d22856;
+  }
+
+  .photo-upload__setting-icon--fill {
+    margin-top: 3px;
+  }
+
+  .photo-upload__setting-icon--contrast {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+  }
+
+  .photo-upload__setting-item--active .photo-upload__setting-panel,
+  .photo-upload__setting-panel {
+    position: relative;
+    left: 0;
+    top: 0;
+
+    display: block;
+    margin-left: 30px;
+    padding-top: 10px;
+  }
+
+  .photo-upload__setting-bar {
+    width: 202px;
+
+    &::after {
+      top: 36px;
+      left: -56px;
+
+      width: 275px;
+    }
+  }
+
+  .photo-upload__setting-toggle {
+    top: 4px;
+  }
+
+  .photo-upload__buttons {
+    width: 260px;
+    margin-left: 45px;
+  }
+
+  .photo-upload__button--post {
+    margin-bottom: 24px;
+  }
+
+  .photo-upload__button-cancel {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-upload {
+    margin-bottom: 28px;
+  }
+
+  .photo-upload__header {
+    width: 940px;
+    margin-bottom: 66px;
+    padding: 0 10px;
+  }
+
+  .photo-upload__form {
+    box-sizing: border-box;
+    width: 940px;
+    padding: 0;
+    padding-left: 81px;
+    padding-top: 57px;
+  }
+
+  .photo-upload__picture-wrapper {
+    width: 300px;
+    margin-bottom: 56px;
+  }
+
+  .photo-upload__settings-list {
+    margin-top: -3px;
+    margin-left: 86px;
+    margin-bottom: 156px;
+  }
+
+  .photo-upload__setting-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-upload__setting-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-upload__setting-icon--fill {
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+
+  .photo-upload__setting-icon--contrast {
+    width: 32px;
+    height: 32px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .photo-upload__setting-item--active .photo-upload__setting-panel,
+  .photo-upload__setting-panel {
+    margin-left: 46px;
+    padding-top: 22px;
+  }
+
+  .photo-upload__setting-bar {
+    width: 288px;
+
+    &::after {
+      top: 36px;
+      left: -91px;
+
+      width: 410px;
+    }
+  }
+
+  .photo-upload__setting-item {
+    display: flex;
+    margin-bottom: 24px;
+
+    &:nth-child(1) .photo-upload__setting-toggle {
+      top: 16px;
+      right: 203px;
+    }
+
+    &:nth-child(2) .photo-upload__setting-toggle {
+      top: 16px;
+      right: 27px;
+    }
+
+    &:nth-child(3) .photo-upload__setting-toggle {
+      top: 16px;
+      right: 112px;
+    }
+  }
+
+  .photo-upload__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 410px;
+    margin-left: 88px;
+  }
+
+  .photo-upload__button {
+    width: 183px;
+  }
+
+  .photo-upload__button--post {
+    margin: 0;
+  }
+
+  .photo-upload__button-cancel {
+    margin: 0;
+  }
+}

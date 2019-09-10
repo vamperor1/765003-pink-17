@@ -1,0 +1,159 @@
+.feedback {
+  padding-top: 42px;
+  padding-bottom: 36px;
+}
+
+.feedback__wrapper {
+  .container-mobile;
+}
+
+.feedback__block {
+  display: none;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.feedback__block--active {
+  display: block;
+}
+
+.feedback__author {
+  display: block;
+  margin-bottom: 14px;
+
+  font-family: @font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  text-align: center;
+  font-style: normal;
+}
+
+.feedback__author span {
+  display: none;
+
+  font-family: @font-bold;
+  font-size: 14px;
+  color: #283645;
+}
+
+.feedback__content {
+  margin: 0;
+
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.feedback__arrow {
+  .button-style-reset;
+
+  position: absolute;
+
+  display: none;
+  width: 22px;
+  height: 41px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.feedback__arrow--left {
+  top: 26px;
+  left: 20px;
+  background-image: url("../../img/icon-review-arrow-left.svg");
+}
+
+.feedback__arrow--right {
+  top: 26px;
+  right: 20px;
+  background-image: url("../../img/icon-review-arrow-right.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    padding-top: 30px;
+    padding-bottom: 14px;
+  }
+
+  .feedback__wrapper {
+    width: 620px;
+  }
+
+  .feedback__block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+    margin-bottom: 0;
+  }
+
+  .feedback__author {
+    order: 2;
+    width: 100%;
+
+    font-size: 20px;
+  }
+
+  .feedback__author span {
+    display: block;
+
+    font-family: @font-regular;
+    font-size: 14px;
+  }
+
+  .feedback__content {
+    order: 1;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    padding-top: 186px;
+    padding-bottom: 10px;
+
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 73px;
+  }
+
+  .feedback__wrapper {
+    position: relative;
+    width: 940px;
+  }
+
+  .feedback__author {
+    font-size: 24px;
+  }
+
+  .feedback__author span {
+    font-size: 18px;
+  }
+
+  .feedback__content {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback__toggle-list {
+    display: none;
+  }
+
+  .feedback__arrow {
+    display: block;
+  }
+}

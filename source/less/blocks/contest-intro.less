@@ -1,3 +1,7 @@
+.contest-intro {
+  margin-bottom: 24px;
+}
+
 .contest-intro__bg-wrapper {
   background-color: @bg-lightblue;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
@@ -11,7 +15,7 @@
   }
 }
 
-.contest-header {
+.contest-intro__header {
   .container-mobile;
   padding-top: 95px;
   padding-bottom: 54px;
@@ -24,7 +28,23 @@
   color: white;
 }
 
+.contest-intro__description {
+  .container-mobile;
+  margin-top: 45px;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.contest-intro__add-text {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .contest-intro {
+    margin-bottom: 72px;
+  }
+
   .contest-intro__bg-wrapper {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: auto;
@@ -36,20 +56,34 @@
     }
   }
 
-  .contest-header {
-    .container-tablet;
+  .contest-intro__header {
+    width: 620px;
     padding-top: 179px;
     padding-bottom: 80px;
 
     font-size: 50px;
     line-height: 60px;
   }
+
+  .contest-intro__description {
+    width: 560px;
+    margin-top: 92px;
+
+    font-size: 18px;
+  }
+
+  .contest-intro__add-text {
+    display: inline-block;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .contest-intro {
+    margin-bottom: 79px;
+  }
+
   .contest-intro__bg-wrapper {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
-    // background-size: 100% auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/bg-back-desktop@2x.jpg");
@@ -58,9 +92,14 @@
     }
   }
 
-  .contest-header {
-    .container-desktop;
+  .contest-intro__header {
+    width: 940px;
     padding-top: 173px;
     padding-bottom: 101px;
+  }
+
+  .contest-intro__description {
+    width: 760px;
+    margin-top: 93px;
   }
 }

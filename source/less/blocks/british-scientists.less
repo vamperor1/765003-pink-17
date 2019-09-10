@@ -5,11 +5,10 @@
 @media (min-width: @tablet-width) {
   .british-scientists {
     display: block;
+    padding: 95px 0;
   }
 
-  .british-scientists__flex-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .british-scientists__container {
     .container-tablet;
   }
 
@@ -19,38 +18,48 @@
     margin: 0;
   }
 
-  .british-scientists__icon {
+  .british-scientists__wrapper {
     position: relative;
 
-    margin-top: 143px;
-    margin-left: 64px;
+    width: 310px;
 
-    font-family: @font-bold;
-    font-size: 96px;
-    line-height: normal;
-    color: #d22856;
+    margin-left: auto;
 
     &::before {
       content: "";
+
       position: absolute;
-      top: -85px;
-      left: -63px;
+      top: -37px;
+      left: -309px;
 
       width: 238px;
       height: 276px;
 
-      background-image: url("../../img/icon-timer-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
+      background: url("../../img/icon-timer.svg") no-repeat center;
+      background-size: cover;
     }
-  }
 
-  .british-scientists__wrapper {
-    // box-sizing: border-box;
-    width: 310px;
-    margin-top: 95px;
-    margin-bottom: 95px;
-    // padding-left: 310px;
+    &::after {
+      content: "24";
+
+      position: absolute;
+      top: 17px;
+      left: -292px;
+
+
+      width: 174px;
+      height: 174px;
+
+      font-family: @font-bold;
+      font-size: 96px;
+      line-height: 165px;
+      color: #d22856;
+      text-transform: uppercase;
+      text-align: center;
+
+      border: 15px solid #d22856;
+      border-radius: 50%;
+    }
   }
 
   .british-scientists__header {
@@ -76,33 +85,37 @@
 
 @media (min-width: @desktop-width) {
   .british-scientists {
+    padding-top: 127px;
+    padding-bottom: 113px;
     background-color: #f2f2f2;
   }
 
-  .british-scientists__flex-wrapper {
+  .british-scientists__container {
     .container-desktop;
   }
 
   .british-scientists__wrapper {
-    width: 575px;
-    margin-top: 126px;
-    margin-bottom: 114px;
-  }
-
-  .british-scientists__icon {
-    margin-top: 140px;
-    margin-left: 80px;
-
-    font-size: 120px;
+    width: 573px;
 
     &::before {
-      top: -107px;
-      left: -80px;
+      top: -96px;
+      left: -366px;
 
       width: 298px;
       height: 345px;
+    }
 
-      background-image: url("../../img/icon-timer-desktop.svg");
+    &::after {
+      top: -25px;
+      left: -344px;
+
+      width: 220px;
+      height: 220px;
+
+      font-size: 122px;
+      line-height: 205px;
+
+      border: 16px solid #d22856;
     }
   }
 
